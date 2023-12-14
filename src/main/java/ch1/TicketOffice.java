@@ -1,7 +1,5 @@
 package ch1;
 
-import lombok.Getter;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,6 +27,5 @@ public class TicketOffice {
     private void plusAmount(Long amount){
         this.amount += amount;
     }
-
 
 }
