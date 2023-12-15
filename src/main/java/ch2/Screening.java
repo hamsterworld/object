@@ -19,7 +19,7 @@ public class Screening {
     }
 
     private Money calculateFee(int audienceCount){
-        return movie.calculate(this).times(audienceCount);
+        return movie.calculateMovieFee(this).times(audienceCount);
     }
 
     public LocalDateTime getStartTime(){
