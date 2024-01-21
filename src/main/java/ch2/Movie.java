@@ -1,6 +1,5 @@
 package ch2;
 
-import javax.management.Query;
 import java.time.Duration;
 
 public class Movie {

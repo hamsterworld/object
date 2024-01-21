@@ -13,4 +13,5 @@ public class Theater {
     public void enter(Audience audience){
         ticketSeller.sellTo(audience);
     }
+
 }

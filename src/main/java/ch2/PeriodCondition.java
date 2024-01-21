@@ -20,4 +20,5 @@ public class PeriodCondition implements DiscountCondition{
                 startTime.compareTo(screening.getStartTime().toLocalTime()) <= 0 &&
                 endTime.compareTo(screening.getStartTime().toLocalTime()) >= 0;
     }
+
 }
