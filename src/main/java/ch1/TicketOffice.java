@@ -6,7 +6,7 @@ import java.util.List;
 public class TicketOffice {
 
     private Long amount;
-    private List<Ticket> tickets = new ArrayList<>();
+    private List<Ticket> tickets;
 
     public TicketOffice(Long amount, List<Ticket> tickets) {
         this.amount = amount;
@@ -26,6 +26,7 @@ public class TicketOffice {
     private void minusAmount(Long amount){
         this.amount -= amount;
     }
+
     private void plusAmount(Long amount){
         this.amount += amount;
     }
