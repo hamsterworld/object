@@ -1,6 +1,5 @@
 package ch4;
 
-import ch3.Screening;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -27,6 +26,7 @@ public class DiscountCondition {
                 this.startTime.compareTo(time) <= 0 &&
                 this.endTime.compareTo(time) >= 0;
     }
+
     public boolean isDiscountable(int sequence){
         if(type != DiscountConditionType.SEQUENCE){
             throw new IllegalArgumentException();

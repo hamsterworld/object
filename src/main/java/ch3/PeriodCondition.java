@@ -4,6 +4,7 @@ import java.time.DayOfWeek;
 import java.time.LocalTime;
 
 public class PeriodCondition implements DiscountCondition {
+
     private DayOfWeek dayOfWeek;
     private LocalTime startTime;
     private LocalTime endTime;
@@ -20,4 +21,5 @@ public class PeriodCondition implements DiscountCondition {
                 startTime.compareTo(screening.getStartTime().toLocalTime()) <= 0 &&
                 endTime.compareTo(screening.getStartTime().toLocalTime()) >= 0;
     }
+
 }
