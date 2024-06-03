@@ -1,7 +1,8 @@
-package ch11.composition;
+package ch14;
 
 import lombok.Getter;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,4 +20,8 @@ public class Phone {
         return ratePolicy.calculateFee(this);
     }
 
+
+    public void call(Call call) {
+
+    }
 }

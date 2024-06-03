@@ -1,4 +1,4 @@
-package ch11.inheritance;
+package ch11.composition;
 
 import lombok.Getter;
 
@@ -6,21 +6,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Getter
-public abstract class Phone {
+public class Phone {
 
+    private RatePolicy ratePolicy;
     private List<Call> calls = new ArrayList<>();
 
-    public Money calculateFee(){
-        Money result = Money.ZERO;
-        for (Call call : calls) {
-            result = result.plus(calculateCallFee(call));
-        }
-        return afterCalculateFee(result);
+    public Phone(RatePolicy ratePolicy){
+        this.ratePolicy = ratePolicy;
     }
 
-    abstract protected Money calculateCallFee(Call call);
-
-    // 아래는 번거로워질것
-    abstract protected Money afterCalculateFee(Money fee);
+    public Money calculateFee(){
+        return ratePolicy.calculateFee(this);
+    }
 
 }

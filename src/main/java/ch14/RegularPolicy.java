@@ -1,8 +1,8 @@
-package ch11.composition;
+package ch14;
 
 import java.time.Duration;
 
-public class RegularPolicy extends BasicRatePolicy{
+public class RegularPolicy extends BasicRatePolicy {
 
     private Money amount;
     private Duration seconds;

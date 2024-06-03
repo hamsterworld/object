@@ -1,4 +1,4 @@
-package ch11.composition;
+package ch14;
 
 
 public interface RatePolicy {

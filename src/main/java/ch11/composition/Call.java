@@ -1,4 +1,4 @@
-package ch11.inheritance;
+package ch11.composition;
 
 import lombok.Getter;
 

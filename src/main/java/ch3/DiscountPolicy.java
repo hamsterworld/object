@@ -21,4 +21,6 @@ public abstract class DiscountPolicy {
     }
 
     abstract protected Money getDiscountAmount(Screening screening);
+
+
 }

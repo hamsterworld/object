@@ -1,8 +1,8 @@
-package ch11.composition;
+package ch14;
 
 import java.time.Duration;
 
-public class NightlyDiscountPolicy extends BasicRatePolicy{
+public class NightlyDiscountPolicy extends BasicRatePolicy {
 
     private static final int LATE_NIGHT_HOUR = 22;
 
