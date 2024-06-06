@@ -2,7 +2,6 @@ package ch14;
 
 import lombok.Getter;
 
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,6 +21,9 @@ public class Phone {
 
 
     public void call(Call call) {
-
+        calls.add(call);
     }
+
+
+
 }
